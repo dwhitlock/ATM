@@ -1,0 +1,17 @@
+<suite name="DBHelper Test Suite" verbose="1">
+    <!-- This parameter will be passed to every test in this suite -->
+    <parameter name="ccid" value="XXXXYYYYZZZZAAAA" />
+	<parameter name="amount" value="51.12" />
+	<parameter name="transType" value="deposit" />
+    <test name="Get Balance">
+        <classes>
+            <class name="org.david.test.DBHelperTest">
+                <methods>
+                    <include name="createActivityHistoryRecordTest" />
+					<include name="updateAccountBalanceTest" />
+					<include name="getCustomerBalanceTest" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
